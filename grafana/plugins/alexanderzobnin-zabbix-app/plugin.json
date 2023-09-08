@@ -1,0 +1,79 @@
+{
+  "dependencies": {
+    "grafanaDependency": "\u003e=9.3.0",
+    "grafanaVersion": "9.3",
+    "plugins": []
+  },
+  "id": "alexanderzobnin-zabbix-app",
+  "includes": [
+    {
+      "name": "Zabbix data source",
+      "type": "datasource"
+    },
+    {
+      "name": "Problems panel",
+      "type": "panel"
+    }
+  ],
+  "info": {
+    "author": {
+      "name": "Alexander Zobnin",
+      "url": "https://github.com/alexanderzobnin"
+    },
+    "build": {
+      "time": 1693394807184,
+      "repo": "https://github.com/grafana/grafana-zabbix",
+      "branch": "master",
+      "hash": "c337137771da053dd3c96962d8a44ed2d7a7c23a",
+      "build": 11
+    },
+    "description": "Zabbix plugin for Grafana",
+    "keywords": [
+      "zabbix"
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/grafana/grafana-zabbix"
+      },
+      {
+        "name": "Docs",
+        "url": "https://grafana.github.io/grafana-zabbix"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/grafana-zabbix/blob/master/LICENSE"
+      }
+    ],
+    "logos": {
+      "large": "img/icn-zabbix-app.svg",
+      "small": "img/icn-zabbix-app.svg"
+    },
+    "screenshots": [
+      {
+        "name": "Showcase",
+        "path": "img/screenshot-showcase.png"
+      },
+      {
+        "name": "Dashboard",
+        "path": "img/screenshot-dashboard01.png"
+      },
+      {
+        "name": "Annotations",
+        "path": "img/screenshot-annotations.png"
+      },
+      {
+        "name": "Metric Editor",
+        "path": "img/screenshot-metric_editor.png"
+      },
+      {
+        "name": "Triggers",
+        "path": "img/screenshot-triggers.png"
+      }
+    ],
+    "updated": "2023-08-30",
+    "version": "4.4.1"
+  },
+  "name": "Zabbix",
+  "type": "app"
+}
