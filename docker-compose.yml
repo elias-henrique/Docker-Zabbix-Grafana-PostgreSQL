@@ -5,6 +5,8 @@ services:
     container_name: postgres
     image: postgres:14.5
     restart: always
+    user: "1000"
+    userns_mode: "777"
     ports:
       - "5432:5432"
     volumes:
@@ -19,6 +21,8 @@ services:
     container_name: zabbix-server
     image: zabbix/zabbix-server-pgsql:ubuntu-6.2-latest
     restart: always
+    user: "1000"
+    userns_mode: "777"
     ports:
       - "10051:10051"
     volumes:
@@ -49,6 +53,8 @@ services:
     container_name: zabbix-frontend
     image: zabbix/zabbix-web-nginx-pgsql:6.2-ubuntu-latest
     restart: always
+    user: "1000"
+    userns_mode: "777"
     ports:
       - "80:8080"
       - "443:8443"
@@ -59,6 +65,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       PHP_TZ: ${TZ}
       ZBX_SERVER_HOST: zabbix-server
+      
     depends_on:
       - zabbix-server
 
@@ -68,20 +75,23 @@ services:
     user: root
     restart: always
     privileged: true
+    userns_mode: "777"
     volumes:
       - ./zabbix-agent/var/run:/var/run
+      - ./config/zabbix_agentd.conf:/etc/zabbix/zabbix_agentd.conf:rw
     ports:
       - "10050:10050"
     environment:
       - ZBX_HOSTNAME=zabbix-server
       - ZBX_SERVER_HOST=zabbix-server
+      - PUID=1000
+      - PGID=1000
     depends_on:
       - zabbix-server
 
   grafana:
     container_name: grafana
     image: grafana/grafana:9.5.9-ubuntu
-    user: "472"
     volumes:
       - ./grafana:/var/lib/grafana
     restart: always
@@ -92,5 +102,7 @@ services:
       - GF_DATABASE_MAX_OPEN_CONN=300
       - GF_ENABLE_GZIP=true
       - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app
+      - PUID=1000
+      - PGID=1000
     depends_on:
       - zabbix-server
