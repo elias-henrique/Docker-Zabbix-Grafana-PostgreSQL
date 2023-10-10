@@ -8,19 +8,19 @@ Hash: SHA512
   "signedByOrg": "grafana",
   "signedByOrgName": "Grafana Labs",
   "plugin": "alexanderzobnin-zabbix-app",
-  "version": "4.4.2",
-  "time": 1696924367828,
+  "version": "4.4.3",
+  "time": 1696940266966,
   "keyId": "7e4d0c6a708866e7",
   "files": {
-    "CHANGELOG.md": "12c0559952b21f68ee3fce7897eeac8446a5abdab6328c8b58a7d281d7dc36e0",
+    "CHANGELOG.md": "7acc3577b5a7bdc466984e22575de50bc6589e4c0825964730b902ac33a2b62d",
     "LICENSE": "7d9f2a93f2de60afd7f80226f398634e703d066bfef52f2a2e06726f708a4363",
     "README.md": "68f3a311843b7f740d0a2e31e3f4a91eefa6c11d0b4834cfaac90e5172526768",
     "datasource/img/icn-zabbix-datasource.svg": "406bfc69249278c8d0f97462fea735639b05328229d887c2e6b10bf97592fbad",
-    "datasource/module.js": "6562147d13abeda32959062fa458a654890dcad75c9929c770938b8e376ab4a4",
-    "datasource/module.js.map": "13fc58cf759d469f94a5835572d1ddd7f99120def9f9345161543e016fac0b44",
+    "datasource/module.js": "7c18b50848adcb3c80490e27f1be497cc8ac1ff77ac38031e0c0e25c10f44dee",
+    "datasource/module.js.map": "9fe4e001cc0216de274905db4d9d45b2df36c74daaf7ca432970f8d778cd2798",
     "datasource/plugin.json": "95731bb8870ae7fef9617a63bf53a3c01fd9361dcf24e1ea3c8475e9f9be527b",
     "go_plugin_build_manifest": "7b11c3a884e0dac0f722ab08f3f7e0c183697c2cfe6933c3913e21eb043d7380",
-    "gpx_zabbix-plugin_linux_amd64": "640e0298759922ab6d0b6ac4f26f778b04e64a3a66a9d0a914154447dc00c99d",
+    "gpx_zabbix-plugin_linux_amd64": "18d1f4c7d669543b82ddc253f71e2f1c03f2ddbfc66f61d783fe6bf263efd024",
     "img/icn-zabbix-app.svg": "406bfc69249278c8d0f97462fea735639b05328229d887c2e6b10bf97592fbad",
     "img/screenshot-annotations.png": "b698176703e2af787f58c5856574f55918c468ae69635b3b9e76b3fe2611a0d6",
     "img/screenshot-dashboard01.png": "bb465a73a27ab39e02846cfcd1d551da34e2d2367370ba65bc0dd035d879bd81",
@@ -34,7 +34,7 @@ Hash: SHA512
     "panel-triggers/module.js.LICENSE.txt": "a38486143894f3983170d896f8ba530930da8ac23d8e377bb4cea077d292099f",
     "panel-triggers/module.js.map": "d36c8e4105bea999b38a4e6dc566d979373ed81304e7d495e5799eac9f68d2bf",
     "panel-triggers/plugin.json": "614a19f021938707b3e3726747c23a8f78668dc578370cc5a3fc0aba95d90a6f",
-    "plugin.json": "e844b26a71fde4cfc940e578ab14c1e2e218a83054031bf2f11ab42b85acf81a",
+    "plugin.json": "9d7a5409ab12b7bb5a8fe4f350e45ab5a3436d061f7dd36df0864bdbc3374f3b",
     "styles/dark.css": "2005d27641bbf0bf3b07010d28b9a4335503e60dc81e42d9328c917752968f5b",
     "styles/light.css": "cd1622b03f44c8dd6e8711ed7b8d05505f878cb98dd81f31f9507285e1d0e642"
   }
@@ -43,10 +43,10 @@ Hash: SHA512
 Version: OpenPGP.js v4.10.10
 Comment: https://openpgpjs.org
 
-wrgEARMKAAYFAmUlAtAAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
-cIhm53GGAgkBlz1H4cjfyLlyUg++g5Idm0fMZfgOXIoLcc/iFU7mjYUAIl/X
-+wOycklqZ9vfXkWAI1mHWvSzLrNcCWHkwWtzu2kCBj6iLsXT5K8hg4FaMb6+
-XEtzkH/N5kZsmxvItjRNoeaMLwWEFPPSO9YkI6dSbUDAgkKWHVt2tvQwIIHK
-JlzK61Nn
-=ITe0
+wrgEARMKAAYFAmUlQOsAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm5/XuAgdgJOSO5DtgLnCt2DUazXESv95TW823VsNRWWz1J/yP9Gxf/5qP
+V/PJFpd0jO/VZtWc+DFAC085F3QYBdNaqFXK2AIJAebLUKWnf556la2p7y0S
+QlQg13JY4j/nveqF2qD2Mq4xc8VqFXQUm3Dr+J1uDV1cL1SALiuCz4R7MP4u
+H8zABIgp
+=0FVs
 -----END PGP SIGNATURE-----

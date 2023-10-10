@@ -21,11 +21,11 @@
       "url": "https://grafana.com"
     },
     "build": {
-      "time": 1696924360761,
+      "time": 1696940259254,
       "repo": "https://github.com/grafana/grafana-zabbix",
       "branch": "master",
-      "hash": "fb0af2faa91af230ca23b8eb1347abc176ec152b",
-      "build": 45
+      "hash": "f85b35c38e8a3acac944ef1b6dd6e03f316bd60d",
+      "build": 50
     },
     "description": "Zabbix plugin for Grafana",
     "keywords": [
@@ -72,7 +72,7 @@
       }
     ],
     "updated": "2023-10-10",
-    "version": "4.4.2"
+    "version": "4.4.3"
   },
   "name": "Zabbix",
   "type": "app"
