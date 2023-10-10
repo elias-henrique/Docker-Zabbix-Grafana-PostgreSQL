@@ -26,7 +26,7 @@ services:
     ports:
       - "10051:10051"
     volumes:
-      - ./config:/etc/zabbix
+      - ./config/zabbix_agentd.conf:/etc/zabbix/zabbix_agentd.conf:ro
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro 
       - ./zabbix-server/alertscripts:/usr/lib/zabbix/alertscripts:ro
@@ -78,7 +78,7 @@ services:
     userns_mode: "777"
     volumes:
       - ./zabbix-agent/var/run:/var/run
-      - ./config/zabbix_agentd.conf:/etc/zabbix/zabbix_agentd.conf:rw
+      - ./config/zabbix_agentd.conf:/etc/zabbix/zabbix_agentd.conf:ro
     ports:
       - "10050:10050"
     environment:

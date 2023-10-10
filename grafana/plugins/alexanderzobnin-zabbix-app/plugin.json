@@ -17,15 +17,15 @@
   ],
   "info": {
     "author": {
-      "name": "Alexander Zobnin",
-      "url": "https://github.com/alexanderzobnin"
+      "name": "Grafana Labs",
+      "url": "https://grafana.com"
     },
     "build": {
-      "time": 1693394807184,
+      "time": 1696924360761,
       "repo": "https://github.com/grafana/grafana-zabbix",
       "branch": "master",
-      "hash": "c337137771da053dd3c96962d8a44ed2d7a7c23a",
-      "build": 11
+      "hash": "fb0af2faa91af230ca23b8eb1347abc176ec152b",
+      "build": 45
     },
     "description": "Zabbix plugin for Grafana",
     "keywords": [
@@ -71,8 +71,8 @@
         "path": "img/screenshot-triggers.png"
       }
     ],
-    "updated": "2023-08-30",
-    "version": "4.4.1"
+    "updated": "2023-10-10",
+    "version": "4.4.2"
   },
   "name": "Zabbix",
   "type": "app"
