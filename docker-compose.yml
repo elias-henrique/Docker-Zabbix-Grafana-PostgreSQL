@@ -19,7 +19,10 @@ services:
 
   zabbix-server:
     container_name: zabbix-server
-    image: zabbix/zabbix-server-pgsql:ubuntu-6.2-latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: zabbix/zabbix-server-pgsql:ubuntu-6.2-latest
     restart: always
     user: "1000"
     userns_mode: "777"
