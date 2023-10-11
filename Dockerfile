@@ -7,9 +7,8 @@ FROM zabbix/zabbix-server-pgsql:ubuntu-6.2-latest
 USER root
 
 # Atualize a lista de pacotes e instale o jq
-RUN apt-get update && \
+RUN apt-get update -y && \
     apt-get install -y jq && \
     apt-get install -y python3-pip && \
     pip3 install py-zabbix && \
-    pip3 install paramiko $$ \
-    pip3 install argparse
+    pip3 install paramiko
