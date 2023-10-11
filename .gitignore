@@ -1,4 +1,5 @@
 zabbix-server/
 zabbix-agent/
 postgres/
-grafana/
+grafa*
+grafana/*
