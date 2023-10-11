@@ -9,6 +9,7 @@ USER root
 # Atualize a lista de pacotes e instale o jq
 RUN apt-get update -y && \
     apt-get install -y jq && \
+    apt-get install -y curl && \
     apt-get install -y python3-pip && \
     pip3 install py-zabbix && \
     pip3 install paramiko
